@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desenvolvedor & Pensador</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="editorial-layout">
+      <section class="profile-section">
+        <div class="avatar-wrapper">
+          <img
+            id="discord-avatar"
+            src="https://cdn.discordapp.com/embed/avatars/0.png"
+            alt="Avatar"
+            onerror="
+              this.src = 'https://cdn.discordapp.com/embed/avatars/0.png'
+            "
+          />
+        </div>
+        <div class="title-box">
+          <h1>Dev &amp;<br />Pensador</h1>
+          <div class="roles">Software Engineer</div>
+          <div
+            style="
+              font-size: 0.65rem;
+              color: #444;
+              margin-top: 0.4rem;
+              letter-spacing: 0.1em;
+            "
+          >
+            sensato
+          </div>
+        </div>
+        <blockquote class="impact-phrase">
+          "Destruindo velhos deuses para forjar os meus próprios."<br /><br />
+          — Sem fé, sem apoios. Apenas com o sonho de ser rico e feliz.
+        </blockquote>
+      </section>
+
+      <section class="content-section">
+        <article>
+          <div class="section-label">01 / Arsenal Tecnológico</div>
+          <div class="tech-container">
+            <div class="tech-item"><i class="fab fa-python"></i> Python</div>
+            <div class="tech-item"><i class="fab fa-node-js"></i> Node.js</div>
+            <div class="tech-item"><i class="fas fa-code"></i> Golang</div>
+          </div>
+        </article>
+
+        <article>
+          <div class="section-label">02 / Essência</div>
+          <div class="phil-container">
+            <div class="phil-statement">Niilista Ativo.</div>
+            <div class="phil-desc">
+              A negação de sentidos preestabelecidos como motor de criação. Uma
+              mente temperada pelas lentes do <span>Estoicismo</span> e do
+              <span>Absurdismo</span>.
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="section-label">03 / Práxis & Estudos</div>
+          <ul class="lifestyle-list">
+            <li>
+              <span class="li-num">I</span>
+              <span class="li-title">Corpo & Saúde</span>
+              <span class="li-desc">Academia • Nutrição</span>
+            </li>
+            <li>
+              <span class="li-num">II</span>
+              <span class="li-title">Narrativas Humanas</span>
+              <span class="li-desc">Mitologia</span>
+            </li>
+            <li>
+              <span class="li-num">III</span>
+              <span class="li-title">Acontecimentos</span>
+              <span class="li-desc">História</span>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+    <script>
+      const discordId = "1076471848105169008";
+      const avatarEl = document.getElementById("discord-avatar");
+      avatarEl.src = `https://cdn.discordapp.com/avatars/${discordId}/HASH_DO_AVATAR.png?size=512`;
+    </script>
+  </body>
+</html>
